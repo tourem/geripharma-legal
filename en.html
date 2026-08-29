@@ -56,11 +56,12 @@ medical documents and take part in video consultations with your doctor.</p>
 are. It applies to the Geripharma mobile application (<code>com.geripharma.app</code>) on Android and iOS.</p>
 
 <h2>1. Who is responsible for your data?</h2>
-<p>The data controller is
-<mark class="todo">[[ legal name, legal form, registered address, company registration number ]]</mark>.</p>
+<p>The Geripharma application is published by <strong>Gerymassy</strong>, which acts as the
+controller of your data: <mark class="todo">[[ legal form, registered address, company registration number ]]</mark>.</p>
 <ul>
 <li>Contact: <mark class="todo">[[ contact email address ]]</mark></li>
-<li>Data Protection Officer: <mark class="todo">[[ DPO email address, or “no DPO appointed” ]]</mark></li>
+<li>Data Protection Officer: no officer has been appointed to date. Please address your requests
+to the contact above.</li>
 </ul>
 <h2>2. What data do we process?</h2>
 <table>
@@ -70,79 +71,105 @@ plain text), first name, last name, medical identifier.</td></tr>
 <tr><td><strong>Health data</strong></td><td>Allergies, medical history, notes from your doctor,
 measurements you record (blood glucose, blood pressure, etc.), prescriptions and medication intake,
 medical documents you upload, appointments and video consultations.</td></tr>
-<tr><td><strong>Technical data</strong></td><td>Push notification identifier, IP address, device make,
-model and operating system version, application version, language and platform (Android or iOS).</td></tr>
-<tr><td><strong>Diagnostics</strong></td><td>Application error and crash reports.</td></tr>
+<tr><td><strong>Your relatives' contact details</strong></td><td>Name, phone number, email address and
+preferred contact channel (email, SMS or WhatsApp) of the people you designate as contacts.</td></tr>
+<tr><td><strong>Subscription and payment</strong></td><td>The subscription plan taken out and the status
+of transactions. Payment card details are handled directly by our payment provider and do not pass
+through our servers.</td></tr>
+<tr><td><strong>Technical data</strong></td><td>Push notification identifier, session token, IP address,
+device make, model and operating system version, application version, language, platform (Android or
+iOS) and authentication method.</td></tr>
+<tr><td><strong>Diagnostics and logging</strong></td><td>Application error and crash reports, server
+technical logs, and delivery events for the emails we send you.</td></tr>
 </table>
-<p>Health data is a <strong>special category</strong> of personal data under Article 9 GDPR and is
-subject to enhanced protection.</p>
+<p>When you record a relative as a contact, you provide us with data about them: it is your
+responsibility to inform them.</p>
+<p>Health data is <strong>sensitive data</strong>: its processing is governed by Malian personal data
+protection law and subject to enhanced protection.</p>
 <p>We do <strong>not</strong> collect your location. The application shows <strong>no advertising</strong>
 and we do not sell your data to anyone.</p>
 <h2>3. Why do we process it?</h2>
 <table>
 <tr><th>Purpose</th><th>Legal basis</th></tr>
 <tr><td>Providing the medical follow-up and teleconsultation service</td>
-<td>Performance of a contract (Art. 6(1)(b)) and <mark class="todo">[[ Art. 9(2)(h) — provision of health care, OR Art. 9(2)(a) — explicit consent: to be confirmed with your legal counsel ]]</mark></td></tr>
+<td>Performance of our contract with you, and <mark class="todo">[[ the basis relied on for processing health data: the patient's explicit consent, or another basis provided for by Malian law — to be confirmed with your legal counsel ]]</mark></td></tr>
 <tr><td>Authenticating you and securing access to your account</td>
 <td>Performance of a contract and legitimate interest (service security)</td></tr>
 <tr><td>Sending you medication and appointment reminders</td>
 <td>Performance of a contract</td></tr>
 <tr><td>Keeping the application stable (crash reports)</td>
 <td>Legitimate interest (service quality and security)</td></tr>
-<tr><td>Sending you service communications</td>
-<td><mark class="todo">[[ consent or legitimate interest — to be confirmed ]]</mark></td></tr>
+<tr><td>Sending you messages about your account, its security and your billing</td>
+<td>Performance of a contract</td></tr>
 </table>
+<p>We send you <strong>no promotional messages</strong> and do not use your data for marketing
+purposes.</p>
 <h2>4. Who has access to your data?</h2>
 <p><strong>Your care team.</strong> The healthcare professional
 following you accesses your record as part of your care.</p>
 <p><strong>Our processors</strong>, acting on our instructions and on our behalf:</p>
 <table>
 <tr><th>Provider</th><th>Role</th></tr>
-<tr><td>Google Cloud Platform</td><td>Hosting of the API and data (<code>europe-west1</code> region, European Union)</td></tr>
+<tr><td>Google Cloud Platform</td><td>Hosting of the server application, the database and documents
+(<code>europe-west1</code> region, European Union)</td></tr>
 <tr><td>Google Firebase</td><td>Push notifications (Cloud Messaging) and crash reports (Crashlytics)</td></tr>
 <tr><td>Zoom Video Communications</td><td>Video consultations</td></tr>
-<tr><td>Salesforce Marketing Cloud</td><td>Sending communications</td></tr>
+<tr><td>Mailgun</td><td>Sending service emails and tracking their delivery</td></tr>
+<tr><td>NRS360</td><td>Sending notification text messages</td></tr>
+<tr><td>Orange Money</td><td>Processing subscription payments</td></tr>
+<tr><td>VIDAL</td><td>Medicine reference database, queried by our servers to display package leaflets.
+This query concerns medicine references, not your identity.</td></tr>
 </table>
-<p><mark class="todo">[[ add any other processor, in particular a certified health data hosting provider if applicable ]]</mark></p>
 <p>We do not disclose your data to any third party for advertising purposes.</p>
-<h2>5. Where is your data hosted?</h2>
-<p>The API and database are hosted in the <strong>European
-Union</strong> (Google Cloud, <code>europe-west1</code> region).</p>
-<p>Some of our processors may process data outside the European Union. Such transfers are governed by
-the European Commission's standard contractual clauses or another mechanism provided for in Chapter V
-of the GDPR.</p>
+<h2>5. Where is your data hosted and transferred?</h2>
+<p>The server application, the database and your
+medical documents are hosted on Google Cloud Platform, in the <code>europe-west1</code> region
+(Belgium, European Union).</p>
+<p>Your data is therefore <strong>stored outside Mali</strong>. This cross-border transfer is framed as
+follows: <mark class="todo">[[ state the legal basis for the transfer out of Mali — APDP authorisation, contractual safeguards, consent — to be established with your legal counsel ]]</mark></p>
+<p>Our technical providers may also process certain data from other countries, under the contractual
+commitments we have entered into with them.</p>
 <h2>6. How long do we keep it?</h2>
 <p><mark class="todo">[[ retention periods per category: account, health data, documents, technical logs, crash reports ]]</mark></p>
-<p><mark class="todo">[[ state any statutory retention obligation applicable to health data, which may override an erasure request ]]</mark></p>
+<p><mark class="todo">[[ state the statutory retention obligation applicable to the medical record, which may override an erasure request, and the point at which data is permanently erased ]]</mark></p>
 <h2>7. What are your rights?</h2>
-<p>Under the GDPR, you have the following rights:</p>
+<p>Under Malian personal data protection law, you have, among others,
+the following rights:</p>
 <ul>
 <li><strong>Access</strong> — obtain a copy of the data we hold about you</li>
 <li><strong>Rectification</strong> — correct inaccurate data</li>
 <li><strong>Erasure</strong> — request deletion of your data</li>
 <li><strong>Restriction</strong> — request that processing be temporarily suspended</li>
-<li><strong>Portability</strong> — receive your data in a machine-readable format</li>
-<li><strong>Objection</strong> — object to processing based on legitimate interest</li>
+<li><strong>Objection</strong> — object, on legitimate grounds, to processing</li>
 <li><strong>Withdrawal of consent</strong> — at any time, where processing relies on your consent</li>
 </ul>
 <p>To exercise these rights, write to <mark class="todo">[[ contact email address ]]</mark>. We respond within one month.</p>
-<p>You may also lodge a complaint with the competent supervisory authority:
-<mark class="todo">[[ supervisory authority and its address — for example the AEPD in Spain, the CNIL in France ]]</mark>.</p>
+<p>You may also lodge a complaint with Mali's <strong>Personal Data Protection Authority
+(APDP)</strong>: <mark class="todo">[[ APDP contact details, and the exact reference of the applicable law — to be confirmed with your legal counsel ]]</mark>.</p>
+<p><mark class="todo">[[ if the responsible company is established in the European Union, or if the application also targets users located in the EU, the GDPR applies in addition: have this confirmed and complete this section accordingly ]]</mark></p>
 <h2>8. How to delete your account</h2>
 <p>You can delete your account directly from the application:</p>
 <p><strong>Profile → Privacy and security → Close my Geripharma account</strong></p>
-<p><mark class="todo">[[ describe precisely what is deleted, what is retained, for how long and under which obligation ]]</mark></p>
+<p>This <strong>immediately deactivates your account</strong>: you no longer have access to the
+application and the service ends. Your medical record is not erased at the same moment, as it is
+subject to a retention obligation.</p>
+<p>Your medical record is then retained for a defined period:
+<mark class="todo">[[ retention period for the medical record and the corresponding statutory obligation ]]</mark>.
+<strong>At the end of that period, your data is permanently erased.</strong></p>
 <p>You may also write to <mark class="todo">[[ contact email address ]]</mark> to request deletion of your account and data.</p>
 <h2>9. How do we protect your data?</h2>
 <ul>
 <li>All communication between the application and our servers is encrypted (HTTPS and secure WebSocket).</li>
 <li>Access to your account relies on cryptographically signed authentication tokens with a limited lifetime.</li>
-<li>Your medical documents are not publicly accessible: retrieving them requires authentication.</li>
+<li>Your medical documents are not publicly exposed: they are served through restricted signed links
+that expire after fifteen minutes.</li>
+<li>Technical secrets for the service are held in a managed vault (Google Secret Manager).</li>
 <li>Access to data is limited to those who need it as part of your care.</li>
 </ul>
 <h2>10. Minors</h2>
 <p>Geripharma is intended for adult patients followed by a healthcare professional.
-The application is not directed at people under 16 and we do not knowingly collect their data.</p>
+Under the user agreement, registration is reserved for people of legal age, or accompanied by their
+legal guardian. We do not knowingly collect data from minors outside that framework.</p>
 <h2>11. Changes to this policy</h2>
 <p>We may update this policy. The date of the last update appears at
 the top of this page. In the event of a substantial change, we will inform you within the
