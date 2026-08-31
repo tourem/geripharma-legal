@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Geripharma</title>
-<meta name="description" content="Privacy Policy — Geripharma">
+<meta name="description" content="Privacy and health data protection policy — Geripharma">
 <meta name="robots" content="index, follow">
 <link rel="alternate" hreflang="fr" href="index.html">
 <link rel="alternate" hreflang="en" href="en.html">
@@ -37,22 +37,37 @@ footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);co
 </style>
 </head>
 <body>
+<!-- VERIF-1 : section 4 carries categories taken from counsel's note (gerontometer, telemetry
+     bracelet, ADL/IADL/MMSE/CFS scores, date of birth, gender, weight, height, dominant hand).
+     Delete any line that does not match what the application actually collects in production.
+     This list must be identical to the Play Console Data Safety declaration. -->
+<!-- VERIF-2 : section 9 commits to deleting account data within 30 days. That commitment requires
+     an effective backend purge. Do not publish until it ships, or replace the period with the
+     fallback wording in the accompanying note. -->
+<!-- VERIF-3 : section 7 states that no medical document is passed to the SMS and payment
+     providers. Confirm with the backend team before publication. -->
+<!-- VERIF-4 : section 10 names the CDP (Senegal) and the ARTCI (Côte d'Ivoire). Keep only the
+     countries where the application is actually distributed. -->
+<!-- Remove these blocks before going live: grep -c 'VERIF-' legal/*.html must return 0 -->
 <div class="wrap">
 <header>
 <p class="brand">Geripharma</p>
-<h1>Privacy Policy</h1>
-<p class="date">Last updated : 30 August 2026</p>
+<h1>Privacy and health data protection policy</h1>
+<p class="date">Last updated : 31 August 2026</p>
 <nav><a href="index.html">Français</a> <a href="en.html" aria-current="page">English</a> <a href="es.html">Español</a></nav>
 </header>
 
-<p>Geripharma is a remote medical follow-up mobile application for patients supported by a
-healthcare professional. It lets you track your medication intake, record health measurements, store
-medical documents and take part in video consultations with your doctor.</p>
-<p>This policy explains what personal data we process, why, who it is shared with, and what your
-rights are. It applies to the Geripharma mobile application (<code>com.geripharma.app</code>) on
-Android and iOS, wherever you live.</p>
-
-<h2>1. Who is responsible for your data?</h2>
+<h2>1. Purpose and scope</h2>
+<p>Geripharma is a mobile application for remote geriatric and medical follow-up, intended for
+patients supported by a healthcare professional. It lets you track medication intake, record health
+measurements, store medical documents and take part in video consultations.</p>
+<p>We are committed to protecting our users' privacy, and health data in particular, which is
+sensitive data. This policy sets out what data is collected, why, how it is secured, who it is shared
+with, and what your rights are.</p>
+<p>It applies to the Geripharma mobile application (<code>com.geripharma.app</code>) on Android and
+iOS, to the connected devices associated with it, and to the services delivered by our servers,
+wherever you live.</p>
+<h2>2. Who is responsible for your data?</h2>
 <p>The Geripharma application is published by <strong>Gerimassy Consulting SRL</strong>, a company
 incorporated under Belgian law, which acts as the controller of your data.</p>
 <ul>
@@ -64,63 +79,84 @@ activities do not, at this time, fall within the cases of mandatory appointment 
 GDPR. We review this position as the service develops. Please address your requests to the contact
 above.</li>
 </ul>
-<h2>2. Which law applies?</h2>
+<h2>3. Which law applies?</h2>
 <p>As Gerimassy Consulting SRL is established in Belgium, all processing falls under the European
 Union's <strong>General Data Protection Regulation (GDPR)</strong>, pursuant to its Article 3(1),
-<strong>whatever your country of residence</strong>. The rights and safeguards described in this
-policy therefore apply to you identically, whether you live in Europe or in Africa.</p>
-<p>In addition to that framework, and without replacing it, the national data protection laws of your
-country of residence also apply. For patients residing in Mali, this means <strong>Law No. 2013-015
-of 21 May 2013, as amended, on the protection of personal data in the Republic of Mali</strong>,
-enforced by the Personal Data Protection Authority (APDP). Where the two frameworks differ, we apply
-the more protective one.</p>
-<h2>3. What data do we process?</h2>
+<strong>whatever your country of residence</strong>. Belgian health data legislation also applies, in
+particular the Act of 30 July 2018 on the protection of natural persons with regard to the processing
+of personal data and the Act of 22 April 2019 on the quality of healthcare practice.</p>
+<p>The rights and safeguards described in this policy apply to you identically, whether you live in
+Europe or in Africa. In addition to that foundation, and without replacing it, the national data
+protection laws of your country of residence also apply. For patients residing in Mali, this means
+<strong>Law No. 2013-015 of 21 May 2013, as amended, on the protection of personal data in the
+Republic of Mali</strong>, enforced by the Personal Data Protection Authority (APDP). Equivalent laws
+apply in the other West African countries where the service is offered. Where these frameworks
+differ, we apply the more protective one.</p>
+<h2>4. What data do we process?</h2>
 <table>
 <tr><th>Category</th><th>Data concerned</th></tr>
 <tr><td><strong>Account and identification</strong></td><td>Email address, password (never stored in
-plain text), first name, last name, medical identifier.</td></tr>
-<tr><td><strong>Health data</strong></td><td>Allergies, medical history, notes from your doctor,
-measurements you record (blood glucose, blood pressure, etc.), prescriptions and medication intake,
-medical documents you upload, appointments and video consultations.</td></tr>
-<tr><td><strong>Your relatives' contact details</strong></td><td>Name, phone number, email address and
-preferred contact channel (email, SMS or WhatsApp) of the people you designate as contacts.</td></tr>
-<tr><td><strong>Subscription and payment</strong></td><td>The subscription plan taken out and the status
-of transactions. Payment card details are handled directly by our payment provider and do not pass
-through our servers.</td></tr>
-<tr><td><strong>Technical data</strong></td><td>Push notification identifier, session token, IP address,
-device make, model and operating system version, application version, language, platform (Android or
-iOS) and authentication method.</td></tr>
+plain text), first name, last name, medical identifier, authentication method.</td></tr>
+<tr><td><strong>Patient profile</strong></td><td>Date of birth, gender, weight, height and dominant
+hand.</td></tr>
+<tr><td><strong>Clinical and gerontological data</strong></td><td>Allergies, medical history, number
+of chronic conditions, notes from the healthcare professional, autonomy and cognition scores (ADL,
+IADL, MMSE, CFS), medical documents you upload, appointments and video consultations.</td></tr>
+<tr><td><strong>Measurements you record</strong></td><td>Readings you enter (blood glucose, blood
+pressure, etc.) and measurements from the gerontometer (grip strength, urinary flow strength, bowel
+rhythm, caloric intake).</td></tr>
+<tr><td><strong>Telemetry data</strong></td><td>Where a connected bracelet is paired with your
+account: heart rate, blood pressure, oxygen saturation (SpO₂), daily step count, movement and fall
+detection.</td></tr>
+<tr><td><strong>Medication</strong></td><td>Prescriptions, medication intake, adherence and
+polypharmacy management.</td></tr>
+<tr><td><strong>Your relatives' contact details</strong></td><td>Name, phone number, email address
+and preferred contact channel (email, SMS or WhatsApp) of the people you designate as contacts or
+authorised carers.</td></tr>
+<tr><td><strong>Subscription and payment</strong></td><td>The subscription plan taken out and the
+status of transactions. Payment card details are handled directly by our payment provider and do not
+pass through our servers.</td></tr>
+<tr><td><strong>Technical data</strong></td><td>Push notification identifier, session token, IP
+address, device make, model and operating system version, application version, language and platform
+(Android or iOS).</td></tr>
 <tr><td><strong>Diagnostics and logging</strong></td><td>Application error and crash reports, server
-technical logs, and delivery events for the emails we send you.</td></tr>
+technical logs, delivery events for the emails we send you.</td></tr>
 </table>
 <p><strong>Where does this data come from?</strong> Most of it comes from you: what you enter in the
-application and what you upload to it. Some health data is recorded by the healthcare professional
-following you, as part of your care. Technical data is generated automatically by the application and
-by our servers.</p>
-<p>When you record a relative as a contact, you provide us with data about them: it is your
-responsibility to inform them. We use that data only to contact them as you have instructed, and they
-have the same rights over it as you have over yours.</p>
+application, what you upload to it, and the measurements produced by the connected devices you use.
+Some clinical data is recorded by the healthcare professional following you, as part of your care.
+Technical data is generated automatically by the application and by our servers.</p>
+<p>When you record a relative as a contact or an authorised carer, you provide us with data about
+them: it is your responsibility to inform them. We use that data only to contact them as you have
+instructed, and they have the same rights over it as you have over yours.</p>
 <p>Health data is <strong>sensitive data</strong>: it constitutes a special category under Article 9
 GDPR, and sensitive data within the meaning of Article 3 of the Malian law. It is subject to enhanced
 protection.</p>
-<p>We do <strong>not</strong> collect your location. The application shows <strong>no advertising</strong>
-and we do not sell your data to anyone.</p>
-<h2>4. Why do we process it?</h2>
+<p>We do <strong>not</strong> collect your location. The application shows <strong>no
+advertising</strong> and we do not sell your data to anyone.</p>
+<h2>5. Why do we process it, and on what legal basis?</h2>
 <table>
 <tr><th>Purpose</th><th>Legal basis</th></tr>
-<tr><td>Providing the medical follow-up and teleconsultation service</td>
+<tr><td>Delivering your preventive, personalised geriatric follow-up and the teleconsultation
+service</td>
 <td>Performance of a contract (Art. 6(1)(b) GDPR). For health data: Art. 9(2)(h) GDPR — the
 processing is necessary for your health care and for the management of health care services. It is
 carried out by, or under the responsibility of, healthcare professionals bound by an obligation of
 professional secrecy, in accordance with Article 9(3) GDPR.</td></tr>
-<tr><td>Authenticating you and securing access to your account</td>
-<td>Performance of a contract and legitimate interest (service security)</td></tr>
+<tr><td>Populating the clinical dashboard and computing frailty indicators (sarcopenia risk, fall
+risk)</td>
+<td>Art. 6(1)(b) and Art. 9(2)(h) GDPR</td></tr>
+<tr><td>Sharing summary reports between you, your authorised carers and the referring healthcare
+professionals</td>
+<td>Art. 6(1)(b) and Art. 9(2)(h) GDPR. Designating an authorised carer is your decision and can be
+revoked at any time.</td></tr>
+<tr><td>Improving treatment adherence and medication safety</td>
+<td>Art. 6(1)(b) and Art. 9(2)(h) GDPR</td></tr>
 <tr><td>Sending you medication and appointment reminders</td>
 <td>Performance of a contract</td></tr>
-<tr><td>Alerting the people you have designated as contacts</td>
-<td>Performance of a contract, and the legitimate interest of those people in your follow-up
-(Art. 6(1)(f))</td></tr>
-<tr><td>Keeping the application stable (crash reports)</td>
+<tr><td>Authenticating you and securing access to your account</td>
+<td>Performance of a contract and legitimate interest (service security)</td></tr>
+<tr><td>Keeping the application stable (crash reports, technical logs)</td>
 <td>Legitimate interest (service quality and security)</td></tr>
 <tr><td>Sending you messages about your account, its security and your billing</td>
 <td>Performance of a contract</td></tr>
@@ -129,12 +165,17 @@ professional secrecy, in accordance with Article 9(3) GDPR.</td></tr>
 </table>
 <p>We send you <strong>no promotional messages</strong> and do not use your data for marketing
 purposes.</p>
-<p>We make <strong>no automated decisions</strong> producing legal effects concerning you or
-significantly affecting you, and we carry out no profiling. Medical decisions are made by the
-healthcare professional following you.</p>
-<h2>5. Who has access to your data?</h2>
+<p><strong>Automated calculations and decisions.</strong> The application automatically computes
+scores and indicators from your measurements, and may raise alerts. These calculations are analytical
+aids intended for the healthcare professional: they are not a diagnosis and give rise to <strong>no
+automated decision</strong> producing legal effects concerning you or significantly affecting you.
+Any medical decision is made by the healthcare professional following you. We carry out no profiling
+for any other purpose.</p>
+<h2>6. Who has access to your data?</h2>
 <p><strong>Your care team.</strong> The healthcare professional following you accesses your record as
 part of your care. They are bound by professional secrecy.</p>
+<p><strong>The carers you authorise.</strong> You decide which of your relatives may access what.
+That authorisation can be revoked at any time from the application.</p>
 <p><strong>Our processors</strong>, acting on our instructions and on our behalf, under a contract
 compliant with Article 28 GDPR:</p>
 <table>
@@ -147,76 +188,106 @@ documents</td><td>European Union (<code>europe-west1</code> region, Belgium)</td
 <tr><td>Mailgun</td><td>Sending service emails and tracking their delivery</td><td>European Union and United States</td></tr>
 <tr><td>NRS360</td><td>Sending notification text messages</td><td>Mali</td></tr>
 <tr><td>Orange Money</td><td>Processing subscription payments</td><td>Mali</td></tr>
-<tr><td>VIDAL</td><td>Medicine reference database, queried by our servers to display package leaflets.
-This query concerns medicine references, not your identity.</td><td>European Union</td></tr>
+<tr><td>VIDAL</td><td>Medicine reference database, queried by our servers to display package
+leaflets. This query concerns medicine references, not your identity.</td><td>European Union</td></tr>
 </table>
 <p>We may also disclose your data to judicial or administrative authorities legally empowered to
 request it, within the limits of what the law requires.</p>
 <p>We do not disclose your data to any third party for advertising purposes.</p>
-<h2>6. Where is your data hosted and transferred?</h2>
-<p><strong>Hosting.</strong> The server application, the database and your medical documents are
-hosted on Google Cloud Platform, in the <code>europe-west1</code> region (Belgium, European Union).
-Your health data is not stored outside the European Union.</p>
+<h2>7. Hosting, sovereignty and transfers</h2>
+<p><strong>Location.</strong> All health data is hosted on Google Cloud Platform, in the
+<code>europe-west1</code> region (Belgium, European Union). The server application, the database and
+your medical documents are stored there. <strong>Your health data is not stored outside the European
+Union.</strong></p>
 <p><strong>Transfers outside the European Union.</strong> Some of our processors handle data from
 countries outside the European Union for which the European Commission has issued no adequacy
-decision. This is the case for providers established in Mali (text message delivery, payment
-processing) and, for certain technical operations, for providers established in the United States.
-These transfers are governed by the <strong>standard contractual clauses</strong> adopted by the
-European Commission (Article 46(2)(c) GDPR), supplemented where necessary by additional technical and
-organisational measures. The data transferred is limited to what the service requires: a phone number
-and the content of a notification for text messages; a subscription reference and a transaction
-status for payment. <strong>No medical document and no health record is transferred to these
-providers.</strong></p>
-<p>You may obtain a copy of the safeguards in place by writing to the contact address given in
-section 1.</p>
-<p><strong>Transfer from Mali to Belgium.</strong> For patients residing in Mali, storing data on our
-servers constitutes a transfer outside Mali within the meaning of Article 11 of Law No. 2013-015 of
-21 May 2013, as amended. That transfer relies on the contractual safeguards agreed with our host,
-including the standard contractual clauses, and on the fact that the recipient is established in the
-European Union and subject to the GDPR, which ensures a high level of protection of privacy and
-fundamental rights.</p>
-<h2>7. How long do we keep it?</h2>
+decision: providers established in Mali (text message delivery, payment processing) and, for certain
+technical operations, providers established in the United States. These transfers are governed by the
+<strong>standard contractual clauses</strong> adopted by the European Commission (Article 46(2)(c)
+GDPR), supplemented where necessary by additional technical and organisational measures. The data
+transferred is limited to what the service requires: a phone number and the content of a notification
+for text messages; a subscription reference and a transaction status for payment. <strong>No medical
+document and no health record is transferred to these providers.</strong></p>
+<p><strong>Transfers from West African countries.</strong> For patients residing there, storing data
+on our servers constitutes a transfer outside the country of residence under the applicable national
+laws. For Mali, that transfer falls under Article 11 of Law No. 2013-015 of 21 May 2013, as amended:
+it relies on the contractual safeguards agreed with our host, including the standard contractual
+clauses, and on the fact that the recipient is established in the European Union and subject to the
+GDPR, which ensures a high level of protection of privacy and fundamental rights. Equivalent
+safeguards are in place for the other countries where the service is offered, in coordination with
+the competent national regulators.</p>
+<p>You may obtain a copy of the safeguards in place by writing to the address given in section 2.</p>
+<h2>8. How do we protect your data?</h2>
+<ul>
+<li>Health data is encrypted <strong>in transit</strong> (HTTPS/TLS and secure WebSocket) and
+<strong>at rest</strong> in our databases.</li>
+<li>Access to your account relies on cryptographically signed authentication tokens with a limited
+lifetime.</li>
+<li>Your medical documents are not publicly exposed: they are served through restricted signed links
+that expire after fifteen minutes.</li>
+<li>Technical secrets for the service are held in a managed vault (Google Secret Manager).</li>
+<li>Access to patient information is strictly limited to authorised healthcare professionals and to
+the people you have explicitly authorised.</li>
+<li>Everyone with access to the data is bound by a duty of confidentiality.</li>
+</ul>
+<h2>9. How long do we keep your data?</h2>
+<p>We keep your data for as long as is necessary for the purposes for which it was collected, and
+then for the archiving periods the law requires.</p>
 <table>
 <tr><th>Category</th><th>Retention period</th></tr>
-<tr><td>Account and identification</td><td>For the life of the account, then 3 years after closure</td></tr>
-<tr><td>Health data and medical documents</td><td>10 years from the last activity on the record</td></tr>
-<tr><td>Your relatives' contact details</td><td>Erased when the account is closed</td></tr>
+<tr><td>Health record and clinical data (history, ADL, IADL, MMSE, CFS scores, gerontometer
+measurements, prescriptions, medical documents)</td>
+<td>For the duration of the care relationship, then archived for <strong>30 years from the last
+contact</strong>, not exceeding 50 years</td></tr>
+<tr><td>Connected bracelet telemetry (steps, heart rate, saturation)</td>
+<td>A rolling 12 months in the active dashboard; beyond that, the data is anonymised or deleted</td></tr>
+<tr><td>Account, identification and profile</td>
+<td>For as long as you use the application, then deleted or anonymised within a maximum of
+<strong>30 days</strong> following closure of the account or a formal erasure request, subject to the
+archiving of the health record set out above</td></tr>
+<tr><td>Your relatives' contact details</td><td>Deleted when the account is closed</td></tr>
 <tr><td>Subscription and billing</td><td>10 years from the close of the relevant financial year, in
 accordance with Belgian accounting law</td></tr>
 <tr><td>Server technical logs</td><td>12 months</td></tr>
 <tr><td>Crash reports</td><td>12 months</td></tr>
 <tr><td>Email delivery events</td><td>12 months</td></tr>
 </table>
-<p>The 10-year period applied to the medical record is aligned with the minimum retention period for
-medical records laid down in Article 31 of Malian Law No. 02-050 of 22 July 2002 on hospitals, as
-amended. It also corresponds to the period during which a liability claim may be brought and during
-which the record must remain producible. Once these periods expire, the data is erased from our
-systems, including stored documents and backups, in line with the backup rotation cycle.</p>
-<h2>8. What are your rights?</h2>
+<p>The 30-year period applied to the health record corresponds to the patient record retention
+obligation laid down in Article 35 of the Belgian Act of 22 April 2019 on the quality of healthcare
+practice. It also covers the minimum periods imposed by the laws of the countries where care is
+delivered, including the ten years set out in Article 31 of Malian Law No. 02-050 of 22 July 2002 on
+hospitals, as amended.</p>
+<p>Once these periods expire, the data is erased from our systems, including stored documents and
+backups, in line with the backup rotation cycle.</p>
+<h2>10. What are your rights?</h2>
 <p>You have the following rights over your data:</p>
 <ul>
-<li><strong>Access</strong> — obtain a copy of the data we hold about you</li>
+<li><strong>Access</strong> — consult all recorded data, scores and readings, and obtain a copy</li>
 <li><strong>Rectification</strong> — correct inaccurate data or complete it</li>
-<li><strong>Erasure</strong> — request deletion of your data</li>
+<li><strong>Erasure</strong> — request deletion of your data, subject to the statutory medical record
+retention obligations</li>
 <li><strong>Restriction</strong> — request that processing be temporarily suspended</li>
-<li><strong>Portability</strong> — receive your data in a structured, machine-readable format, or
-have it transmitted to another controller</li>
-<li><strong>Objection</strong> — object, on grounds relating to your particular situation, to
-processing based on our legitimate interest</li>
+<li><strong>Portability</strong> — receive your health data in a structured, machine-readable format,
+or have it transmitted to another controller</li>
+<li><strong>Objection</strong> — object, on grounds relating to your particular situation, to any
+non-essential processing based on our legitimate interest</li>
 <li><strong>Withdrawal of consent</strong> — at any time, where processing relies on your consent</li>
 <li><strong>Post-mortem instructions</strong> — determine what happens to your data after your death,
 where the applicable law provides for this</li>
 </ul>
-<p><strong>Limit on the right to erasure.</strong> Your medical record cannot be erased on request
-during the period stated in section 7. That retention is necessary for the establishment, exercise or
-defence of legal claims within the meaning of Article 17(3)(e) GDPR, having regard in particular to
-the medical record retention obligations applicable in the country where care is delivered. During
-that period the record is no longer used to provide you with the service: it is retained, and nothing
-more.</p>
-<p>To exercise these rights, write to <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>.
-We respond within one month, reduced to <strong>thirty days</strong> for rectification requests
-falling under Article 13 of the Malian law. We may ask you for proof of identity where we have
-reasonable doubt as to the identity of the requester. Exercising these rights is free of charge.</p>
+<p>These rights may be exercised by you or, where your condition warrants it, by your legal
+representative or the person of trust you have designated.</p>
+<p><strong>Limit on the right to erasure.</strong> Your health record cannot be erased on request
+during the archiving period stated in section 9. That retention answers a legal obligation within the
+meaning of Article 17(3)(b) GDPR as regards Belgian law, and in any event remains necessary for the
+establishment, exercise or defence of legal claims within the meaning of Article 17(3)(e). During
+that archiving period the record is no longer used to provide you with the service: it is retained,
+and nothing more.</p>
+<p>To exercise these rights, write to <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>
+or use the support area of the application. We respond within one month, reduced to <strong>thirty
+days</strong> for rectification requests falling under Article 13 of the Malian law. We may ask you
+for proof of identity where we have reasonable doubt as to the identity of the requester. Exercising
+these rights is free of charge.</p>
 <p>You may also lodge a complaint with a supervisory authority:</p>
 <ul>
 <li>in Belgium, the publisher's country of establishment, with the <strong>Data Protection
@@ -226,47 +297,42 @@ Authority</strong> — Rue de la Presse 35, 1000 Brussels, Belgium — +32 2 274
 <li>in Mali, with the <strong>Personal Data Protection Authority (APDP)</strong> — Quartier du
 Fleuve, Avenue Moussa Travélé, Porte 462, BPE 4596, Bamako, Republic of Mali — +223 20 23 86 15 —
 <a href="mailto:contact@apdp.ml">contact@apdp.ml</a> — <a href="https://apdp.ml">apdp.ml</a>. That
-authority is established by Law No. 2013-015 of 21 May 2013, as amended, on the protection of personal
-data in the Republic of Mali;</li>
-<li>if you live in another country, with the data protection authority competent where you
-reside.</li>
+authority is established by Law No. 2013-015 of 21 May 2013, as amended;</li>
+<li>in the other countries where the service is offered, with the competent national data protection
+authority — for example the Commission de protection des données personnelles (CDP) in Senegal or the
+Autorité de régulation des télécommunications de Côte d'Ivoire (ARTCI);</li>
+<li>if you live elsewhere, with the authority competent where you reside.</li>
 </ul>
-<h2>9. How to delete your account</h2>
+<h2>11. How to delete your account</h2>
 <p>You can delete your account directly from the application:</p>
 <p><strong>Profile → Privacy and security → Close my Geripharma account</strong></p>
 <p>This <strong>immediately deactivates your account</strong>: you no longer have access to the
-application and the service ends. Your medical record is not erased at the same moment, for the
-reasons set out in section 8.</p>
-<p>Your medical record is then retained <strong>for ten years from the last activity</strong>.
-<strong>At the end of that period, your data is permanently erased.</strong></p>
+application and the service ends. Your account and profile data is deleted or anonymised within a
+maximum of 30 days.</p>
+<p>Your health record is not erased at the same moment: it is archived for the period stated in
+section 9, for the reasons set out in section 10. <strong>At the end of that period, your data is
+permanently erased.</strong></p>
 <p>You may also write to <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a> to
 request deletion of your account and data.</p>
-<h2>10. How do we protect your data?</h2>
-<ul>
-<li>All communication between the application and our servers is encrypted (HTTPS and secure WebSocket).</li>
-<li>Data is encrypted at rest by our hosting provider.</li>
-<li>Access to your account relies on cryptographically signed authentication tokens with a limited lifetime.</li>
-<li>Your medical documents are not publicly exposed: they are served through restricted signed links
-that expire after fifteen minutes.</li>
-<li>Technical secrets for the service are held in a managed vault (Google Secret Manager).</li>
-<li>Access to data is limited to those who need it as part of your care.</li>
-<li>Everyone with access to the data is bound by a duty of confidentiality.</li>
-</ul>
-<h2>11. In the event of a data breach</h2>
+<h2>12. In the event of a data breach</h2>
 <p>If a data breach occurred and posed a risk to your rights and freedoms, we would notify the
 competent supervisory authority within the statutory time limits. If the risk were high, we would
 also inform you directly and without undue delay.</p>
-<h2>12. Minors</h2>
-<p>Geripharma is intended for adult patients followed by a healthcare professional.
-Under the user agreement, registration is reserved for people of legal age, or accompanied by their
-legal guardian. We do not knowingly collect data from minors outside that framework. If you believe a
-minor has provided us with data outside that framework, write to us and we will delete it.</p>
-<h2>13. Changes to this policy</h2>
-<p>We may update this policy. The date of the last update appears at
-the top of this page. In the event of a substantial change, we will inform you within the
-application, before the change takes effect.</p>
-<h2>14. Contact us</h2>
-<p>For any question about this policy or about the processing of your data:</p>
+<h2>13. Minors and protected persons</h2>
+<p>Geripharma is intended for adult patients followed by a healthcare professional. Under the user
+agreement, registration is reserved for people of legal age. We do not knowingly collect data from
+minors. If you believe a minor has provided us with data, write to us and we will delete it.</p>
+<p>Where the patient is unable to express their wishes, the account may be opened and administered by
+their legal representative or by the person of trust they have designated, under the conditions
+provided by the applicable law. That person acts in the patient's interest and is bound by the same
+confidentiality rules.</p>
+<h2>14. Changes to this policy</h2>
+<p>We may update this policy. The date of the last update appears at the top of this page. In the
+event of a substantial change, we will inform you within the application, before the change takes
+effect.</p>
+<h2>15. Contact us</h2>
+<p>For any question about this policy, about where your data is hosted, or to exercise your rights,
+write to us or use the support area of the application:</p>
 <address>
 <strong>Gerimassy Consulting SRL</strong><br>
 Rue du Mont Saint-Aubert 27A<br>
@@ -274,7 +340,7 @@ Rue du Mont Saint-Aubert 27A<br>
 <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>
 </address>
 
-<footer>Geripharma — remote medical follow-up application.</footer>
+<footer>Geripharma — remote geriatric and medical follow-up application.</footer>
 </div>
 </body>
 </html>

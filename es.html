@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad — Geripharma</title>
-<meta name="description" content="Política de privacidad — Geripharma">
+<meta name="description" content="Política de privacidad y de protección de los datos de salud — Geripharma">
 <meta name="robots" content="index, follow">
 <link rel="alternate" hreflang="fr" href="index.html">
 <link rel="alternate" hreflang="en" href="en.html">
@@ -37,23 +37,38 @@ footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);co
 </style>
 </head>
 <body>
+<!-- VERIF-1 : el apartado 4 recoge categorías procedentes de la nota del asesor (gerontómetro,
+     pulsera de telemetría, escalas ADL/IADL/MMSE/CFS, fecha de nacimiento, género, peso, altura,
+     mano dominante). Eliminar toda línea que no corresponda a lo que la aplicación recoge realmente
+     en producción. Esta lista debe coincidir con la declaración Data Safety de Play Console. -->
+<!-- VERIF-2 : el apartado 9 compromete la supresión de los datos de cuenta en 30 días. Ese
+     compromiso exige una purga efectiva en el backend. No publicar hasta que esté entregada, o
+     sustituir el plazo por la redacción alternativa de la nota de acompañamiento. -->
+<!-- VERIF-3 : el apartado 7 afirma que no se transmite ningún documento médico a los proveedores de
+     SMS y de pago. Confirmar con el equipo backend antes de publicar. -->
+<!-- VERIF-4 : el apartado 10 cita la CDP (Senegal) y la ARTCI (Costa de Marfil). Dejar únicamente
+     los países donde la aplicación se distribuye efectivamente. -->
+<!-- Eliminar estos bloques antes de la publicación: grep -c 'VERIF-' legal/*.html debe devolver 0 -->
 <div class="wrap">
 <header>
 <p class="brand">Geripharma</p>
-<h1>Política de privacidad</h1>
-<p class="date">Última actualización : 30 de agosto de 2026</p>
+<h1>Política de privacidad y de protección de los datos de salud</h1>
+<p class="date">Última actualización : 31 de agosto de 2026</p>
 <nav><a href="index.html">Français</a> <a href="en.html">English</a> <a href="es.html" aria-current="page">Español</a></nav>
 </header>
 
-<p>Geripharma es una aplicación móvil de seguimiento médico a distancia dirigida a pacientes
-atendidos por un profesional sanitario. Permite realizar el seguimiento de la toma de medicamentos,
-registrar mediciones de salud, conservar documentos médicos y participar en videoconsultas con su
-médico.</p>
-<p>Esta política explica qué datos personales tratamos, con qué finalidad, con quién se comparten y
-cuáles son sus derechos. Se aplica a la aplicación móvil Geripharma
-(<code>com.geripharma.app</code>) en Android e iOS, con independencia de su lugar de residencia.</p>
-
-<h2>1. ¿Quién es el responsable de sus datos?</h2>
+<h2>1. Objeto y ámbito de aplicación</h2>
+<p>Geripharma es una aplicación móvil de seguimiento geriátrico y médico a distancia, dirigida a
+pacientes atendidos por un profesional sanitario. Permite realizar el seguimiento de la toma de
+medicamentos, registrar mediciones de salud, conservar documentos médicos y participar en
+videoconsultas.</p>
+<p>Nos comprometemos a proteger la privacidad de nuestros usuarios y, en particular, los datos de
+salud, que son datos sensibles. Esta política describe qué datos se recogen, con qué finalidad, cómo
+se protegen, con quién se comparten y cuáles son sus derechos.</p>
+<p>Se aplica a la aplicación móvil Geripharma (<code>com.geripharma.app</code>) en Android e iOS, a
+los objetos conectados asociados a ella y a los servicios prestados por nuestros servidores, con
+independencia de su lugar de residencia.</p>
+<h2>2. ¿Quién es el responsable de sus datos?</h2>
 <p>La aplicación Geripharma está editada por <strong>Gerimassy Consulting SRL</strong>, sociedad de
 derecho belga, responsable del tratamiento de sus datos.</p>
 <ul>
@@ -65,63 +80,87 @@ actividades de tratamiento no se encuadran, a día de hoy, en los supuestos de d
 previstos en el artículo 37 del RGPD. Revisamos esta posición a medida que el servicio evoluciona.
 Dirija sus solicitudes al contacto indicado anteriormente.</li>
 </ul>
-<h2>2. ¿Qué derecho se aplica?</h2>
+<h2>3. ¿Qué derecho se aplica?</h2>
 <p>Al estar Gerimassy Consulting SRL establecida en Bélgica, la totalidad del tratamiento se rige por
 el <strong>Reglamento General de Protección de Datos (RGPD)</strong> de la Unión Europea, en virtud
-de su artículo 3.1, <strong>cualquiera que sea su país de residencia</strong>. Los derechos y
-garantías descritos en esta política le corresponden por igual, resida en Europa o en África.</p>
-<p>A ese marco se añaden, sin sustituirlo, las leyes nacionales de protección de datos del país donde
-usted reside. Para los pacientes residentes en Malí se trata de la <strong>Ley n.º 2013-015, de 21 de
-mayo de 2013, modificada, de protección de los datos de carácter personal en la República de
-Malí</strong>, cuya aplicación supervisa la Autoridad de Protección de Datos Personales (APDP).
-Cuando ambos marcos difieren, aplicamos el más protector.</p>
-<h2>3. ¿Qué datos tratamos?</h2>
+de su artículo 3.1, <strong>cualquiera que sea su país de residencia</strong>. Se aplica además la
+legislación belga en materia de datos de salud, en particular la Ley de 30 de julio de 2018, de
+protección de las personas físicas en lo que respecta al tratamiento de datos personales, y la Ley de
+22 de abril de 2019, relativa a la calidad de la práctica de la asistencia sanitaria.</p>
+<p>Los derechos y garantías descritos en esta política le corresponden por igual, resida en Europa o
+en África. A ese marco se añaden, sin sustituirlo, las leyes nacionales de protección de datos del
+país donde usted reside. Para los pacientes residentes en Malí se trata de la <strong>Ley n.º
+2013-015, de 21 de mayo de 2013, modificada, de protección de los datos de carácter personal en la
+República de Malí</strong>, cuya aplicación supervisa la Autoridad de Protección de Datos Personales
+(APDP). Leyes equivalentes se aplican en los demás países de África Occidental donde se ofrece el
+servicio. Cuando estos marcos difieren, aplicamos el más protector.</p>
+<h2>4. ¿Qué datos tratamos?</h2>
 <table>
 <tr><th>Categoría</th><th>Datos afectados</th></tr>
 <tr><td><strong>Cuenta e identificación</strong></td><td>Dirección de correo electrónico, contraseña
-(nunca almacenada en texto claro), nombre, apellidos, identificador médico.</td></tr>
-<tr><td><strong>Datos de salud</strong></td><td>Alergias, antecedentes médicos, notas de su médico,
-mediciones que usted registra (glucemia, tensión arterial, etc.), prescripciones y tomas de
-medicamentos, documentos médicos que usted añade, citas y videoconsultas.</td></tr>
+(nunca almacenada en texto claro), nombre, apellidos, identificador médico, método de
+autenticación.</td></tr>
+<tr><td><strong>Perfil del paciente</strong></td><td>Fecha de nacimiento, género, peso, altura y mano
+dominante.</td></tr>
+<tr><td><strong>Datos clínicos y gerontológicos</strong></td><td>Alergias, antecedentes médicos,
+número de patologías crónicas, notas del profesional sanitario, escalas de autonomía y de cognición
+(ADL, IADL, MMSE, CFS), documentos médicos que usted añade, citas y videoconsultas.</td></tr>
+<tr><td><strong>Mediciones que usted registra</strong></td><td>Constantes que usted introduce
+(glucemia, tensión arterial, etc.) y mediciones procedentes del gerontómetro (fuerza de prensión,
+fuerza de micción, ritmo intestinal, aporte calórico).</td></tr>
+<tr><td><strong>Datos de telemetría</strong></td><td>Cuando hay una pulsera conectada asociada a su
+cuenta: frecuencia cardiaca, tensión arterial, saturación de oxígeno (SpO₂), número de pasos diarios,
+detección de movimientos y de caídas.</td></tr>
+<tr><td><strong>Tratamientos farmacológicos</strong></td><td>Prescripciones, tomas de medicamentos,
+adherencia y gestión de la polimedicación.</td></tr>
 <tr><td><strong>Contactos de sus allegados</strong></td><td>Nombre, número de teléfono, dirección de
 correo electrónico y canal de contacto preferido (correo, SMS o WhatsApp) de las personas que usted
-designa como contactos.</td></tr>
-<tr><td><strong>Suscripción y pago</strong></td><td>Modalidad de suscripción contratada y estado de las
-transacciones. Los datos bancarios son tratados directamente por nuestro proveedor de pago y no pasan
-por nuestros servidores.</td></tr>
-<tr><td><strong>Datos técnicos</strong></td><td>Identificador de notificaciones push, token de sesión,
-dirección IP, marca, modelo y versión del sistema operativo de su dispositivo, versión de la
-aplicación, idioma, plataforma (Android o iOS) y método de autenticación.</td></tr>
-<tr><td><strong>Diagnóstico y registro</strong></td><td>Informes de error y de fallo de la aplicación,
-registros técnicos del servidor y eventos de entrega de los correos que le enviamos.</td></tr>
+designa como contactos o cuidadores autorizados.</td></tr>
+<tr><td><strong>Suscripción y pago</strong></td><td>Modalidad de suscripción contratada y estado de
+las transacciones. Los datos bancarios son tratados directamente por nuestro proveedor de pago y no
+pasan por nuestros servidores.</td></tr>
+<tr><td><strong>Datos técnicos</strong></td><td>Identificador de notificaciones push, token de
+sesión, dirección IP, marca, modelo y versión del sistema operativo de su dispositivo, versión de la
+aplicación, idioma y plataforma (Android o iOS).</td></tr>
+<tr><td><strong>Diagnóstico y registro</strong></td><td>Informes de error y de fallo de la
+aplicación, registros técnicos del servidor, eventos de entrega de los correos que le enviamos.</td></tr>
 </table>
 <p><strong>¿De dónde proceden estos datos?</strong> La mayoría proceden de usted: lo que introduce en
-la aplicación y lo que deposita en ella. Algunos datos de salud los registra el profesional sanitario
-que le atiende, en el marco de su asistencia. Los datos técnicos se generan automáticamente por la
-aplicación y por nuestros servidores.</p>
-<p>Cuando registra a un allegado como contacto, nos facilita datos que le conciernen: le corresponde a
-usted informarle. Solo utilizamos esos datos para contactarle según sus instrucciones, y esa persona
-dispone sobre ellos de los mismos derechos que usted sobre los suyos.</p>
+la aplicación, lo que deposita en ella y las mediciones producidas por los objetos conectados que
+utiliza. Algunos datos clínicos los registra el profesional sanitario que le atiende, en el marco de
+su asistencia. Los datos técnicos se generan automáticamente por la aplicación y por nuestros
+servidores.</p>
+<p>Cuando registra a un allegado como contacto o como cuidador autorizado, nos facilita datos que le
+conciernen: le corresponde a usted informarle. Solo utilizamos esos datos para contactarle según sus
+instrucciones, y esa persona dispone sobre ellos de los mismos derechos que usted sobre los suyos.</p>
 <p>Los datos de salud son <strong>datos sensibles</strong>: constituyen una categoría especial en el
 sentido del artículo 9 del RGPD y un dato sensible en el sentido del artículo 3 de la ley maliense.
 Son objeto de una protección reforzada.</p>
-<p><strong>No</strong> recogemos su ubicación geográfica. La aplicación no muestra
-<strong>ninguna publicidad</strong> y no vendemos sus datos a nadie.</p>
-<h2>4. ¿Con qué finalidad los tratamos?</h2>
+<p><strong>No</strong> recogemos su ubicación geográfica. La aplicación no muestra <strong>ninguna
+publicidad</strong> y no vendemos sus datos a nadie.</p>
+<h2>5. ¿Con qué finalidad los tratamos y sobre qué base jurídica?</h2>
 <table>
 <tr><th>Finalidad</th><th>Base jurídica</th></tr>
-<tr><td>Prestar el servicio de seguimiento médico y de teleconsulta</td>
+<tr><td>Garantizar su seguimiento geriátrico preventivo y personalizado, y prestar el servicio de
+teleconsulta</td>
 <td>Ejecución del contrato (art. 6.1.b del RGPD). Para los datos de salud: art. 9.2.h del RGPD — el
 tratamiento es necesario para su asistencia sanitaria y para la gestión del servicio de asistencia.
 Se realiza por profesionales sanitarios sujetos al secreto profesional, o bajo su responsabilidad,
 conforme al artículo 9.3 del RGPD.</td></tr>
-<tr><td>Autenticarle y proteger el acceso a su cuenta</td>
-<td>Ejecución del contrato e interés legítimo (seguridad del servicio)</td></tr>
+<tr><td>Alimentar el cuadro de mando clínico y calcular los indicadores de fragilidad (riesgo de
+sarcopenia, riesgo de caída)</td>
+<td>Art. 6.1.b y art. 9.2.h del RGPD</td></tr>
+<tr><td>Transmitir los informes de síntesis entre usted, sus cuidadores autorizados y los
+profesionales sanitarios de referencia</td>
+<td>Art. 6.1.b y art. 9.2.h del RGPD. La designación de un cuidador autorizado depende de su decisión
+y puede revocarse en cualquier momento.</td></tr>
+<tr><td>Optimizar la adherencia terapéutica y la seguridad de los medicamentos</td>
+<td>Art. 6.1.b y art. 9.2.h del RGPD</td></tr>
 <tr><td>Enviarle recordatorios de medicación y de citas</td>
 <td>Ejecución del contrato</td></tr>
-<tr><td>Avisar a las personas que usted ha designado como contactos</td>
-<td>Ejecución del contrato e interés legítimo de dichas personas en su seguimiento (art. 6.1.f)</td></tr>
-<tr><td>Garantizar la estabilidad de la aplicación (informes de fallo)</td>
+<tr><td>Autenticarle y proteger el acceso a su cuenta</td>
+<td>Ejecución del contrato e interés legítimo (seguridad del servicio)</td></tr>
+<tr><td>Garantizar la estabilidad de la aplicación (informes de fallo, registros técnicos)</td>
 <td>Interés legítimo (calidad y seguridad del servicio)</td></tr>
 <tr><td>Enviarle mensajes relativos a su cuenta, a su seguridad y a su facturación</td>
 <td>Ejecución del contrato</td></tr>
@@ -130,14 +169,19 @@ conforme al artículo 9.3 del RGPD.</td></tr>
 </table>
 <p>No le enviamos <strong>ningún mensaje promocional</strong> ni utilizamos sus datos con fines de
 prospección comercial.</p>
-<p>No adoptamos <strong>ninguna decisión automatizada</strong> que produzca efectos jurídicos sobre
-usted o que le afecte significativamente, ni realizamos elaboración de perfiles. Las decisiones
-médicas corresponden al profesional sanitario que le atiende.</p>
-<h2>5. ¿Quién tiene acceso a sus datos?</h2>
+<p><strong>Cálculos automáticos y decisiones.</strong> La aplicación calcula automáticamente escalas
+e indicadores a partir de sus mediciones y puede generar alertas. Estos cálculos son ayudas al
+análisis destinadas al profesional sanitario: no constituyen un diagnóstico y no dan lugar a
+<strong>ninguna decisión automatizada</strong> que produzca efectos jurídicos sobre usted o que le
+afecte significativamente. Toda decisión médica corresponde al profesional sanitario que le atiende.
+No realizamos elaboración de perfiles con ninguna otra finalidad.</p>
+<h2>6. ¿Quién tiene acceso a sus datos?</h2>
 <p><strong>Su equipo asistencial.</strong> El profesional sanitario que le atiende accede a su
 historial en el marco de su asistencia. Está sujeto al secreto profesional.</p>
-<p><strong>Nuestros encargados del tratamiento</strong>, que actúan siguiendo nuestras instrucciones y
-por nuestra cuenta, en el marco de un contrato conforme al artículo 28 del RGPD:</p>
+<p><strong>Los cuidadores que usted autoriza.</strong> Usted decide quién, entre sus allegados, puede
+acceder a qué. Esta autorización es revocable en cualquier momento desde la aplicación.</p>
+<p><strong>Nuestros encargados del tratamiento</strong>, que actúan siguiendo nuestras instrucciones
+y por nuestra cuenta, en el marco de un contrato conforme al artículo 28 del RGPD:</p>
 <table>
 <tr><th>Proveedor</th><th>Función</th><th>Lugar de tratamiento</th></tr>
 <tr><td>Google Cloud Platform</td><td>Alojamiento de la aplicación servidor, de la base de datos y de
@@ -149,41 +193,68 @@ los documentos</td><td>Unión Europea (región <code>europe-west1</code>, Bélgi
 <tr><td>NRS360</td><td>Envío de los SMS de notificación</td><td>Malí</td></tr>
 <tr><td>Orange Money</td><td>Tratamiento de los pagos de suscripción</td><td>Malí</td></tr>
 <tr><td>VIDAL</td><td>Base de referencia de medicamentos, consultada por nuestros servidores para
-mostrar los prospectos. Esta consulta se refiere a referencias de medicamentos, no a su identidad.</td>
-<td>Unión Europea</td></tr>
+mostrar los prospectos. Esta consulta se refiere a referencias de medicamentos, no a su
+identidad.</td><td>Unión Europea</td></tr>
 </table>
 <p>También podemos comunicar sus datos a las autoridades judiciales o administrativas legalmente
 habilitadas para solicitarlos, dentro de los límites de lo que la ley exige.</p>
 <p>No comunicamos sus datos a ningún tercero con fines publicitarios.</p>
-<h2>6. ¿Dónde se alojan y se transfieren sus datos?</h2>
-<p><strong>Alojamiento.</strong> La aplicación servidor, la base de datos y sus documentos médicos
-están alojados en Google Cloud Platform, en la región <code>europe-west1</code> (Bélgica, Unión
-Europea). Sus datos de salud no se almacenan fuera de la Unión Europea.</p>
+<h2>7. Alojamiento, soberanía y transferencias</h2>
+<p><strong>Localización.</strong> La totalidad de los datos de salud está alojada en Google Cloud
+Platform, en la región <code>europe-west1</code> (Bélgica, Unión Europea). La aplicación servidor, la
+base de datos y sus documentos médicos se almacenan allí. <strong>Sus datos de salud no se almacenan
+fuera de la Unión Europea.</strong></p>
 <p><strong>Transferencias fuera de la Unión Europea.</strong> Algunos de nuestros encargados tratan
 datos desde países situados fuera de la Unión Europea respecto de los cuales la Comisión Europea no
-ha adoptado una decisión de adecuación. Es el caso de los proveedores establecidos en Malí (envío de
-SMS, tratamiento de los pagos) y, para determinadas operaciones técnicas, de los proveedores
-establecidos en Estados Unidos. Estas transferencias se rigen por las <strong>cláusulas contractuales
-tipo</strong> adoptadas por la Comisión Europea (artículo 46.2.c del RGPD), completadas en su caso
-con medidas técnicas y organizativas adicionales. Los datos transferidos se limitan a lo que la
-prestación exige: un número de teléfono y el contenido de una notificación para el envío de SMS; una
-referencia de suscripción y un estado de transacción para el pago. <strong>No se transfiere a estos
-proveedores ningún documento médico ni ninguna historia clínica.</strong></p>
-<p>Puede obtener una copia de las garantías establecidas escribiendo a la dirección de contacto
-indicada en el apartado 1.</p>
-<p><strong>Transferencia desde Malí hacia Bélgica.</strong> Para los pacientes residentes en Malí, el
-registro de los datos en nuestros servidores constituye una transferencia fuera de Malí en el sentido
-del artículo 11 de la Ley n.º 2013-015, de 21 de mayo de 2013, modificada. Esta transferencia se
-funda en las garantías contractuales suscritas con nuestro proveedor de alojamiento, en particular
+ha adoptado una decisión de adecuación: los proveedores establecidos en Malí (envío de SMS,
+tratamiento de los pagos) y, para determinadas operaciones técnicas, proveedores establecidos en
+Estados Unidos. Estas transferencias se rigen por las <strong>cláusulas contractuales tipo</strong>
+adoptadas por la Comisión Europea (artículo 46.2.c del RGPD), completadas en su caso con medidas
+técnicas y organizativas adicionales. Los datos transferidos se limitan a lo que la prestación exige:
+un número de teléfono y el contenido de una notificación para el envío de SMS; una referencia de
+suscripción y un estado de transacción para el pago. <strong>No se transfiere a estos proveedores
+ningún documento médico ni ninguna historia clínica.</strong></p>
+<p><strong>Transferencias desde los países de África Occidental.</strong> Para los pacientes que allí
+residen, el registro de los datos en nuestros servidores constituye una transferencia fuera del país
+de residencia conforme a las legislaciones nacionales aplicables. En el caso de Malí, esta
+transferencia se rige por el artículo 11 de la Ley n.º 2013-015, de 21 de mayo de 2013, modificada:
+se funda en las garantías contractuales suscritas con nuestro proveedor de alojamiento, en particular
 las cláusulas contractuales tipo, y en el hecho de que el destinatario está establecido en la Unión
 Europea y sujeto al RGPD, que garantiza un elevado nivel de protección de la vida privada y de los
-derechos fundamentales.</p>
-<h2>7. ¿Durante cuánto tiempo los conservamos?</h2>
+derechos fundamentales. Se aplican garantías equivalentes en los demás países donde se ofrece el
+servicio, en coordinación con las autoridades nacionales de regulación competentes.</p>
+<p>Puede obtener una copia de las garantías establecidas escribiendo a la dirección indicada en el
+apartado 2.</p>
+<h2>8. ¿Cómo protegemos sus datos?</h2>
+<ul>
+<li>Los datos de salud están cifrados <strong>en tránsito</strong> (HTTPS/TLS y WebSocket seguro) y
+<strong>en reposo</strong> en nuestras bases de datos.</li>
+<li>El acceso a su cuenta se basa en tokens de autenticación firmados criptográficamente y de
+duración limitada.</li>
+<li>Sus documentos médicos no están expuestos públicamente: se sirven mediante enlaces firmados de
+uso restringido que caducan a los quince minutos.</li>
+<li>Los secretos técnicos del servicio se conservan en una bóveda gestionada (Google Secret
+Manager).</li>
+<li>El acceso a la información del paciente está estrictamente limitado a los profesionales
+sanitarios habilitados y a las personas que usted haya autorizado expresamente.</li>
+<li>Toda persona con acceso a los datos está sujeta a una obligación de confidencialidad.</li>
+</ul>
+<h2>9. ¿Durante cuánto tiempo conservamos sus datos?</h2>
+<p>Conservamos sus datos durante el tiempo necesario para las finalidades para las que fueron
+recogidos y, después, durante los plazos de archivo que la ley impone.</p>
 <table>
 <tr><th>Categoría</th><th>Plazo de conservación</th></tr>
-<tr><td>Cuenta e identificación</td><td>Durante la vida de la cuenta y 3 años tras su cierre</td></tr>
-<tr><td>Datos de salud y documentos médicos</td><td>10 años desde la última actividad en la historia
-clínica</td></tr>
+<tr><td>Historia clínica y datos clínicos (antecedentes, escalas ADL, IADL, MMSE, CFS, mediciones del
+gerontómetro, prescripciones, documentos médicos)</td>
+<td>Durante la relación asistencial y, después, archivados <strong>30 años desde el último
+contacto</strong>, sin exceder de 50 años</td></tr>
+<tr><td>Datos de telemetría de la pulsera conectada (pasos, frecuencia cardiaca, saturación)</td>
+<td>12 meses móviles en el cuadro de mando activo; más allá, los datos se anonimizan o se
+suprimen</td></tr>
+<tr><td>Cuenta, identificación y perfil</td>
+<td>Durante todo el tiempo de uso de la aplicación y, después, suprimidos o anonimizados en un plazo
+máximo de <strong>30 días</strong> tras el cierre de la cuenta o una solicitud formal de supresión,
+sin perjuicio del archivo de la historia clínica indicado anteriormente</td></tr>
 <tr><td>Contactos de sus allegados</td><td>Se suprimen al cerrarse la cuenta</td></tr>
 <tr><td>Suscripción y facturación</td><td>10 años desde el cierre del ejercicio contable
 correspondiente, conforme a la legislación contable belga</td></tr>
@@ -191,39 +262,45 @@ correspondiente, conforme a la legislación contable belga</td></tr>
 <tr><td>Informes de fallo</td><td>12 meses</td></tr>
 <tr><td>Eventos de entrega de correos</td><td>12 meses</td></tr>
 </table>
-<p>El plazo de 10 años aplicado a la historia clínica está alineado con el plazo mínimo de
-conservación de la historia clínica previsto en el artículo 31 de la Ley maliense n.º 02-050, de 22
-de julio de 2002, hospitalaria, modificada. Corresponde asimismo al periodo durante el cual puede
-ejercitarse una acción de responsabilidad y durante el cual la historia debe poder aportarse. Al
-expirar estos plazos, los datos se suprimen de nuestros sistemas, incluidos los documentos
+<p>El plazo de 30 años aplicado a la historia clínica corresponde a la obligación de conservación de
+la historia del paciente prevista en el artículo 35 de la Ley belga de 22 de abril de 2019, relativa
+a la calidad de la práctica de la asistencia sanitaria. Cubre asimismo los plazos mínimos impuestos
+por las legislaciones de los países donde se prestan los cuidados, en particular los diez años
+previstos en el artículo 31 de la Ley maliense n.º 02-050, de 22 de julio de 2002, hospitalaria,
+modificada.</p>
+<p>Al expirar estos plazos, los datos se suprimen de nuestros sistemas, incluidos los documentos
 almacenados y las copias de seguridad, según el ciclo de rotación de estas.</p>
-<h2>8. ¿Cuáles son sus derechos?</h2>
+<h2>10. ¿Cuáles son sus derechos?</h2>
 <p>Usted dispone de los siguientes derechos sobre sus datos:</p>
 <ul>
-<li><strong>Acceso</strong> — obtener una copia de los datos que tenemos sobre usted</li>
+<li><strong>Acceso</strong> — consultar todos los datos, escalas y constantes registrados y obtener
+una copia</li>
 <li><strong>Rectificación</strong> — corregir datos inexactos o completarlos</li>
-<li><strong>Supresión</strong> — solicitar la eliminación de sus datos</li>
+<li><strong>Supresión</strong> — solicitar la eliminación de sus datos, sin perjuicio de las
+obligaciones legales de conservación de la historia clínica</li>
 <li><strong>Limitación</strong> — solicitar la suspensión temporal de un tratamiento</li>
-<li><strong>Portabilidad</strong> — recibir sus datos en un formato estructurado y legible por
-máquina, o solicitar su transmisión a otro responsable</li>
-<li><strong>Oposición</strong> — oponerse, por motivos relativos a su situación particular, a un
-tratamiento basado en nuestro interés legítimo</li>
+<li><strong>Portabilidad</strong> — recibir sus datos de salud en un formato estructurado y legible
+por máquina, o solicitar su transmisión a otro responsable</li>
+<li><strong>Oposición</strong> — oponerse, por motivos relativos a su situación particular, a
+cualquier tratamiento no esencial basado en nuestro interés legítimo</li>
 <li><strong>Retirada del consentimiento</strong> — en cualquier momento, cuando un tratamiento se
 base en su consentimiento</li>
 <li><strong>Instrucciones post mortem</strong> — determinar el destino de sus datos tras su
 fallecimiento, cuando la ley aplicable lo prevea</li>
 </ul>
+<p>Estos derechos pueden ejercerse por usted mismo o, cuando su estado lo justifique, por su
+representante legal o la persona de confianza que haya designado.</p>
 <p><strong>Límite al derecho de supresión.</strong> Su historia clínica no puede suprimirse a simple
-solicitud durante el plazo indicado en el apartado 7. Esta conservación es necesaria para la
-formulación, el ejercicio o la defensa de reclamaciones, en el sentido del artículo 17.3.e del RGPD,
-atendiendo en particular a las obligaciones de conservación de la historia clínica aplicables en el
-país donde se prestan los cuidados. Durante ese periodo, la historia deja de utilizarse para
+solicitud durante el plazo de archivo indicado en el apartado 9. Esta conservación responde a una
+obligación legal en el sentido del artículo 17.3.b del RGPD en lo que respecta al derecho belga y, en
+todo caso, sigue siendo necesaria para la formulación, el ejercicio o la defensa de reclamaciones en
+el sentido del artículo 17.3.e. Durante ese periodo de archivo, la historia deja de utilizarse para
 prestarle el servicio: se conserva, y nada más.</p>
-<p>Para ejercer estos derechos, escriba a <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>.
-Respondemos en el plazo de un mes, reducido a <strong>treinta días</strong> para las solicitudes de
-rectificación comprendidas en el artículo 13 de la ley maliense. Podemos solicitarle un justificante
-de identidad si albergamos una duda razonable sobre la identidad del solicitante. El ejercicio de
-estos derechos es gratuito.</p>
+<p>Para ejercer estos derechos, escriba a <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>
+o utilice el espacio de soporte de la aplicación. Respondemos en el plazo de un mes, reducido a
+<strong>treinta días</strong> para las solicitudes de rectificación comprendidas en el artículo 13 de
+la ley maliense. Podemos solicitarle un justificante de identidad si albergamos una duda razonable
+sobre la identidad del solicitante. El ejercicio de estos derechos es gratuito.</p>
 <p>También puede presentar una reclamación ante una autoridad de control:</p>
 <ul>
 <li>en Bélgica, país de establecimiento del editor, ante la <strong>Autoridad de Protección de
@@ -233,48 +310,43 @@ Datos</strong> — Rue de la Presse 35, 1000 Bruselas, Bélgica — +32 2 274 48
 <li>en Malí, ante la <strong>Autoridad de Protección de Datos Personales (APDP)</strong> — Quartier
 du Fleuve, Avenue Moussa Travélé, Porte 462, BPE 4596, Bamako, República de Malí — +223 20 23 86 15 —
 <a href="mailto:contact@apdp.ml">contact@apdp.ml</a> — <a href="https://apdp.ml">apdp.ml</a>. Esta
-autoridad está instituida por la Ley n.º 2013-015, de 21 de mayo de 2013, modificada, de protección
-de los datos de carácter personal en la República de Malí;</li>
-<li>si reside en otro país, ante la autoridad de protección de datos competente en su lugar de
-residencia.</li>
+autoridad está instituida por la Ley n.º 2013-015, de 21 de mayo de 2013, modificada;</li>
+<li>en los demás países donde se ofrece el servicio, ante la autoridad nacional de protección de
+datos competente — por ejemplo la Commission de protection des données personnelles (CDP) en Senegal
+o la Autorité de régulation des télécommunications de Côte d'Ivoire (ARTCI);</li>
+<li>si reside en otro lugar, ante la autoridad competente en su lugar de residencia.</li>
 </ul>
-<h2>9. ¿Cómo eliminar su cuenta?</h2>
+<h2>11. ¿Cómo eliminar su cuenta?</h2>
 <p>Puede eliminar su cuenta directamente desde la aplicación:</p>
 <p><strong>Perfil → Confidencialidad y seguridad → Cerrar mi cuenta Geripharma</strong></p>
 <p>Esta acción <strong>desactiva inmediatamente su cuenta</strong>: deja de tener acceso a la
-aplicación y el servicio cesa. Su historia clínica no se borra en ese mismo momento, por las razones
-expuestas en el apartado 8.</p>
-<p>Su historia clínica se conserva a continuación <strong>durante diez años desde la última
-actividad</strong>. <strong>Transcurrido ese plazo, sus datos se suprimen definitivamente.</strong></p>
+aplicación y el servicio cesa. Sus datos de cuenta y de perfil se suprimen o se anonimizan en un
+plazo máximo de 30 días.</p>
+<p>Su historia clínica no se borra en ese mismo momento: se archiva durante el plazo indicado en el
+apartado 9, por las razones expuestas en el apartado 10. <strong>Transcurrido ese plazo, sus datos se
+suprimen definitivamente.</strong></p>
 <p>También puede escribirnos a <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>
 para solicitar la eliminación de su cuenta y de sus datos.</p>
-<h2>10. ¿Cómo protegemos sus datos?</h2>
-<ul>
-<li>Todas las comunicaciones entre la aplicación y nuestros servidores están cifradas (HTTPS y WebSocket seguro).</li>
-<li>Los datos están cifrados en reposo por nuestro proveedor de alojamiento.</li>
-<li>El acceso a su cuenta se basa en tokens de autenticación firmados criptográficamente y de duración limitada.</li>
-<li>Sus documentos médicos no están expuestos públicamente: se sirven mediante enlaces firmados de
-uso restringido que caducan a los quince minutos.</li>
-<li>Los secretos técnicos del servicio se conservan en una bóveda gestionada (Google Secret Manager).</li>
-<li>El acceso a los datos está limitado a las personas que lo necesitan en el marco de su asistencia.</li>
-<li>Las personas con acceso a los datos están sujetas a una obligación de confidencialidad.</li>
-</ul>
-<h2>11. En caso de violación de datos</h2>
+<h2>12. En caso de violación de datos</h2>
 <p>Si se produjera una violación de datos que entrañara un riesgo para sus derechos y libertades, la
 notificaríamos a la autoridad de control competente en los plazos legales. Si el riesgo fuera
 elevado, se lo comunicaríamos además directamente y sin dilación indebida.</p>
-<h2>12. Menores</h2>
-<p>Geripharma está destinada a pacientes adultos atendidos por un profesional
-sanitario. Conforme al acuerdo de uso, el registro está reservado a personas mayores de edad o
-acompañadas de su tutor legal. No recogemos conscientemente datos de menores fuera de ese marco. Si
-considera que un menor nos ha facilitado datos fuera de ese marco, escríbanos y los suprimiremos.</p>
-<h2>13. Modificaciones de esta política</h2>
-<p>Podemos modificar esta política. La fecha de la última
-actualización figura en la parte superior de esta página. En caso de modificación sustancial, se lo
-comunicaremos dentro de la aplicación, antes de que la modificación surta efecto.</p>
-<h2>14. Contacto</h2>
-<p>Para cualquier consulta relativa a esta política o al tratamiento de sus
-datos:</p>
+<h2>13. Menores y personas protegidas</h2>
+<p>Geripharma está destinada a pacientes adultos atendidos por un profesional sanitario. Conforme al
+acuerdo de uso, el registro está reservado a personas mayores de edad. No recogemos conscientemente
+datos de menores. Si considera que un menor nos ha facilitado datos, escríbanos y los
+suprimiremos.</p>
+<p>Cuando el paciente no puede expresar su voluntad, la cuenta puede abrirse y administrarse por su
+representante legal o por la persona de confianza que haya designado, en las condiciones previstas
+por la ley aplicable. Esa persona actúa en interés del paciente y está sujeta a las mismas normas de
+confidencialidad.</p>
+<h2>14. Modificaciones de esta política</h2>
+<p>Podemos modificar esta política. La fecha de la última actualización figura en la parte superior
+de esta página. En caso de modificación sustancial, se lo comunicaremos dentro de la aplicación,
+antes de que la modificación surta efecto.</p>
+<h2>15. Contacto</h2>
+<p>Para cualquier consulta relativa a esta política, al alojamiento de sus datos o para ejercer sus
+derechos, puede escribirnos o utilizar el espacio de soporte de la aplicación:</p>
 <address>
 <strong>Gerimassy Consulting SRL</strong><br>
 Rue du Mont Saint-Aubert 27A<br>
@@ -282,7 +354,7 @@ Rue du Mont Saint-Aubert 27A<br>
 <a href="mailto:minthe@geripharmaapp.com">minthe@geripharmaapp.com</a>
 </address>
 
-<footer>Geripharma — aplicación de seguimiento médico a distancia.</footer>
+<footer>Geripharma — aplicación de seguimiento geriátrico y médico a distancia.</footer>
 </div>
 </body>
 </html>
