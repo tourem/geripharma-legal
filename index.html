@@ -37,18 +37,6 @@ footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);co
 </style>
 </head>
 <body>
-<!-- VERIF-1 : le §4 reprend des catégories issues de la note du conseil (gérontomètre, bracelet de
-     télémétrie, scores ADL/IADL/MMSE/CFS, date de naissance, genre, poids, taille, main dominante).
-     Supprimer toute ligne qui ne correspond pas à ce que l'application collecte réellement en
-     production. Cette liste doit être identique à la déclaration Data Safety du Play Console. -->
-<!-- VERIF-2 : le §9 engage la suppression des données de compte sous 30 jours. Cet engagement
-     suppose une purge effective côté backend. Ne pas publier tant que ce développement n'est pas
-     livré, ou remplacer le délai par la formulation de repli de la note d'accompagnement. -->
-<!-- VERIF-3 : le §7 affirme qu'aucun document médical n'est transmis aux prestataires SMS et
-     paiement. Confirmer avec l'équipe backend avant publication. -->
-<!-- VERIF-4 : le §10 cite la CDP (Sénégal) et l'ARTCI (Côte d'Ivoire). N'y laisser que les pays où
-     l'application est effectivement distribuée. -->
-<!-- Supprimer ces blocs avant mise en ligne : grep -c 'VERIF-' legal/*.html doit renvoyer 0 -->
 <div class="wrap">
 <header>
 <p class="brand">Geripharma</p>

@@ -37,18 +37,6 @@ footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);co
 </style>
 </head>
 <body>
-<!-- VERIF-1 : section 4 carries categories taken from counsel's note (gerontometer, telemetry
-     bracelet, ADL/IADL/MMSE/CFS scores, date of birth, gender, weight, height, dominant hand).
-     Delete any line that does not match what the application actually collects in production.
-     This list must be identical to the Play Console Data Safety declaration. -->
-<!-- VERIF-2 : section 9 commits to deleting account data within 30 days. That commitment requires
-     an effective backend purge. Do not publish until it ships, or replace the period with the
-     fallback wording in the accompanying note. -->
-<!-- VERIF-3 : section 7 states that no medical document is passed to the SMS and payment
-     providers. Confirm with the backend team before publication. -->
-<!-- VERIF-4 : section 10 names the CDP (Senegal) and the ARTCI (Côte d'Ivoire). Keep only the
-     countries where the application is actually distributed. -->
-<!-- Remove these blocks before going live: grep -c 'VERIF-' legal/*.html must return 0 -->
 <div class="wrap">
 <header>
 <p class="brand">Geripharma</p>
